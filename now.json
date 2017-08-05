@@ -1,6 +1,5 @@
 {
   "name": "oc-registry",
-  "alias": "oc-registry",
   "env": {
     "S3_KEY": "@s3-key",
     "S3_SECRET": "@s3-secret",
