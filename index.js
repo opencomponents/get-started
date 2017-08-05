@@ -16,6 +16,7 @@ const configuration = {
     username: process.env.PUBLISH_USERNAME,
     password: process.env.PUBLISH_PASSWORD
   },
+  tempDir: 'tmp',
   s3: {
     key: process.env.S3_KEY,
     secret: process.env.S3_SECRET,
@@ -30,7 +31,6 @@ const configuration = {
 // An express.js app is exposed as registry.app
 const registry = new oc.Registry(configuration);
 registry.start(function(err, app) {
-  console.log(process.env)
   if (err) {
     console.log('Registry not started: ', err);
     process.exit(1);

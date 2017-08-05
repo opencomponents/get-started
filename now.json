@@ -1,0 +1,12 @@
+{
+  "name": "oc-registry",
+  "alias": "oc.registry",
+  "env": {
+    "S3_KEY": "@s3-key",
+    "S3_SECRET": "@s3-secret",
+    "S3_REGION": "@s3-region",
+    "S3_BUCKET": "@s3-bucket",
+    "PUBLISH_USERNAME": "@publish-username",
+    "PUBLISH_PASSWORD": "@publish-password"
+  }
+}
