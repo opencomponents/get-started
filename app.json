@@ -5,6 +5,10 @@
   "logo": "https://avatars2.githubusercontent.com/u/28356951?v=4&s=200",
   "keywords": ["opencomponents", "registry", "microfrontends", "node"],
   "env": {
+    "BASEURL": {
+      "description": "The base url of the registry, ie: https://your-app-name.herokuapp.com",
+      "value": ""
+    },
     "S3_KEY": {
       "description": "Your AWS S3 Key",
       "value": ""

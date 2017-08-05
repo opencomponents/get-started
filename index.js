@@ -5,13 +5,11 @@
 require('dotenv').config();
 const oc = require('oc');
 
-const herokuBASEURL = process.env.URL ? process.env.URL : null;
-
 // Minimal configuration for the registry
 // For advanced configuration check the documantion:
 // https://github.com/opentable/oc/wiki/Registry
 const configuration = {
-  baseUrl: process.env.BASEURL || herokuBASEURL,
+  baseUrl: process.env.BASEURL,
   port: process.env.PORT || 3000,
   publishAuth: {
     type: 'basic',
@@ -32,6 +30,7 @@ const configuration = {
 // An express.js app is exposed as registry.app
 const registry = new oc.Registry(configuration);
 registry.start(function(err, app) {
+  console.log(process.env)
   if (err) {
     console.log('Registry not started: ', err);
     process.exit(1);
