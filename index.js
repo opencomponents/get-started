@@ -9,7 +9,7 @@ const oc = require('oc');
 // For advanced configuration check the documantion:
 // https://github.com/opentable/oc/wiki/Registry
 const configuration = {
-  baseUrl: process.env.BASEURL,
+  baseUrl: process.env.NOW_URL || process.env.BASEURL,
   port: process.env.PORT || 3000,
   publishAuth: {
     type: 'basic',
