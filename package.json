@@ -1,0 +1,17 @@
+{
+  "name": "opencomponents-starter-kit",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": {
+    "name": "Nick Balestra",
+    "email": "nick@balestra.ch"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "oc": "^0.40.2"
+  }
+}
