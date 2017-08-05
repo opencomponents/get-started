@@ -5,7 +5,7 @@
 require('dotenv').config();
 const oc = require('oc');
 
-const herokuBASEURL = process.env.HEROKU_APP_NAME ? `${process.env.HEROKU_APP_NAME}.herokuapp.com` : null;
+const herokuBASEURL = process.env.URL ? process.env.URL : null;
 
 // Minimal configuration for the registry
 // For advanced configuration check the documantion:
