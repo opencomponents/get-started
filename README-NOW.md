@@ -1,18 +1,47 @@
 # Starter Kit
 
 Get up and running with OpenComponents in 3 simple steps.
-<br />💁 This guide relies on Heroku for its deploy, if you wish to rely on [Now](https://zeit.co/now) instead, [click here](README-NOW.md).
-
 
 Before starting make sure you have:
-- An account on [Heroku](https://signup.heroku.com/)
+- An account on [Now](https://zeit.co/now) and its [CLI installed](https://zeit.co/download#command-line)
 - An [S3](https://aws.amazon.com/s3) bucket on AWS
 
-## #1 - Deploy the OpenComponents Registry to Heroku
+## #1 - Deploy the OpenComponents Registry to Now
 
-Click the button below and follow the instructions.
+Clone this repository locally:
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/opencomponents/starter-kit)
+```
+$ git clone https://github.com/opencomponents/starter-kit && cd starter-kit
+```
+
+Add the needed secrets environment variables with the now CLI:
+
+- `s3-key`
+- `s3-secret`
+- `s3-region`
+- `s3-bucket`
+- `publish-username`
+- `publish-password`
+
+```
+$ now secret s3-key yourvaluehere
+...
+```
+
+and make them available as environment variables:
+
+```
+$ now -e S3_KEY=@s3-key -e S3_SECRET=@s3-secret -e S3_REGION=@s3-region -e S3_BUCKET=@s3-bucket -e PUBLISH_USERNAME=@publish-username -e PUBLISH_PASSWORD=@publish-password
+```
+
+Check [now.json](https://github.com/opencomponents/starter-kit/blob/master/now.json) for a list of all the ENV variables. For help with the now CLI check the relative [docs](https://zeit.co/docs/features/now-cli)
+
+You are now ready to deploy, simply type:
+
+```
+$ now
+```
+
 
 ## #2 - Build your first component
 
