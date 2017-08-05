@@ -1,0 +1,33 @@
+{
+  "name": "OpenComponents Registry",
+  "description": "A barebone OpenComponents registry",
+  "repository": "https://github.com/opencomponents/starter-kit",
+  "logo": "https://avatars2.githubusercontent.com/u/28356951?v=4&s=200",
+  "keywords": ["opencomponents", "registry", "microfrontends", "node"],
+  "env": {
+    "S3_KEY": {
+      "description": "Your AWS S3 Key",
+      "value": ""
+    },
+    "S3_SECRET": {
+      "description": "Your AWS S3 Secret",
+      "value": ""
+    },
+    "S3_REGION": {
+      "description": "Your AWS S3 Region",
+      "value": ""
+    },
+    "S3_BUCKET": {
+      "description": "Your AWS Bucket Name",
+      "value": ""
+    },
+    "PUBLISH_USERNAME": {
+      "description": "The username needed to publish to the registry",
+      "value": ""
+    },
+    "PUBLISH_PASSWORD": {
+      "description": "The password needed to publish to the registry",
+      "value": ""
+    }
+  }
+}
