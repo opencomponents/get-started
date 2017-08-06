@@ -8,7 +8,7 @@ Before starting make sure you have:
 - An account on [Heroku](https://signup.heroku.com/)
 - An [S3](https://aws.amazon.com/s3) bucket on AWS
 
-## #1 - Deploy the OpenComponents Registry to Heroku
+## #1 - Deploy the OpenComponents registry to Heroku
 
 Click the button below and follow the instructions.
 
@@ -44,7 +44,7 @@ Your component will be available at:
 
 ## #3 Publish the component to the registry
 
-Add the registry to the CLI:
+Add the registry using the CLI:
 
 ```
 $ oc registry add http://my-registry.on.herokuapp.com/
@@ -53,7 +53,7 @@ $ oc registry add http://my-registry.on.herokuapp.com/
 Publish your component
 
 ```
-$ oc publish happiness --username=YOURVALUEHERE --password=YOURVALUEHERE
+$ oc publish my-first-component --username=YOURVALUEHERE --password=YOURVALUEHERE
 ```
 
 Your component is now published 🎉 🎉 🎉 !

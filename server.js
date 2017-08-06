@@ -3,7 +3,7 @@
 // Store ENV variables in .env to set up your local development
 // https://github.com/motdotla/dotenv#usage
 require('dotenv').config();
-const oc = require('oc');
+const Registry = require('oc').Registry;
 
 // Minimal configuration for the registry
 // For advanced configuration check the documantion:
@@ -23,13 +23,14 @@ const configuration = {
     region: process.env.S3_REGION,
     path: `//s3.${process.env.S3_REGION}.amazonaws.com/${process.env.S3_BUCKET}/`,
     componentsDir: 'components'
-  }
+  },
+  dependencies: []
 };
 
 // Instantiate the registry
 // An express.js app is exposed as registry.app
-const registry = new oc.Registry(configuration);
-registry.start(function(err, app) {
+const registry = new Registry(configuration);
+registry.start(function (err, app) {
   if (err) {
     console.log('Registry not started: ', err);
     process.exit(1);
