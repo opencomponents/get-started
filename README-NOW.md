@@ -34,13 +34,15 @@ and make them available as environment variables:
 $ now -e S3_KEY=@s3-key -e S3_SECRET=@s3-secret -e S3_REGION=@s3-region -e S3_BUCKET=@s3-bucket -e PUBLISH_USERNAME=@publish-username -e PUBLISH_PASSWORD=@publish-password
 ```
 
-Check [now.json](https://github.com/opencomponents/starter-kit/blob/master/now.json) for a list of all the ENV variables. For help with the now CLI check the relative [docs](https://zeit.co/docs/features/now-cli)
+For further help with the now CLI, please refere to their [docs](https://zeit.co/docs/features/now-cli)
 
 You are now ready to deploy, simply type:
 
 ```
 $ now
 ```
+
+If prompted, choose the Dockerfile deploy
 
 
 ## #2 - Build your first component
@@ -76,15 +78,15 @@ Your component will be available at:
 Add the registry to the CLI:
 
 ```
-$ oc registry add http://my-registry.on.herokuapp.com/
+$ oc registry add http://my-registryurl.on.now.sh/
 ```
 
 Publish your component
 
 ```
-$ oc publish happiness --username=YOURVALUEHERE --password=YOURVALUEHERE
+$ oc publish my-first-component --username=YOURVALUEHERE --password=YOURVALUEHERE
 ```
 
 Your component is now published 🎉 🎉 🎉 !
 
-You can consume it here: `http://my-registry.on.herokuapp.com/my-first-component`
+You can consume it here: `http://my-registryurl.on.now.sh/my-first-component`
