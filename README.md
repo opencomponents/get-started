@@ -1,5 +1,7 @@
 # Starter Kit
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/opencomponents/get-started.svg)](https://greenkeeper.io/)
+
 Get up and running with OpenComponents in 3 simple steps.
 <br />💁 This guide relies on Heroku for its deploy, if you wish to rely on [Now](https://zeit.co/now) instead, [click here](README-NOW.md).
 
