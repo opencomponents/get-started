@@ -9,6 +9,6 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "oc": "^0.42.7"
+    "oc": "^0.42.10"
   }
 }
