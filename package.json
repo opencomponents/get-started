@@ -1,7 +1,18 @@
 {
   "name": "opencomponents-starter-kit",
   "version": "1.0.0",
-  "description": "",
+  "description": "Get up and running with OpenComponents in 3 simple steps",
+  "scripts": {
+    "test": "true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opencomponents/get-started.git"
+  },
+  "bugs": {
+    "url": "https://github.com/opencomponents/get-started/issues"
+  },
+  "homepage": "https://github.com/opencomponents/get-started#readme",
   "author": {
     "name": "Nick Balestra",
     "email": "nick@balestra.ch"
