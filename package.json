@@ -19,7 +19,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^5.0.0",
+    "dotenv": "^6.0.0",
     "oc": "^0.44.0"
   }
 }
